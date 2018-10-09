@@ -14934,13 +14934,13 @@ module.exports = checkPropTypes;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(90);
 /* unused harmony reexport Redirect */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(37);
-/* unused harmony reexport Route */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(15);
 /* unused harmony reexport Router */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(96);
 /* unused harmony reexport StaticRouter */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(98);
-/* unused harmony reexport Switch */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(100);
 /* unused harmony reexport matchPath */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(101);
@@ -37945,35 +37945,34 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var App = function (_Component) {
-  _inherits(App, _Component);
+var IWANTTHISONE = function (_Component) {
+  _inherits(IWANTTHISONE, _Component);
 
-  function App() {
-    _classCallCheck(this, App);
+  function IWANTTHISONE() {
+    _classCallCheck(this, IWANTTHISONE);
 
-    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (IWANTTHISONE.__proto__ || Object.getPrototypeOf(IWANTTHISONE)).apply(this, arguments));
   }
 
-  _createClass(App, [{
+  _createClass(IWANTTHISONE, [{
     key: 'render',
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["a" /* BrowserRouter */],
         null,
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'div',
+          __WEBPACK_IMPORTED_MODULE_2_react_router_dom__["d" /* Switch */],
           null,
-          'omg why....',
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Header__["a" /* default */], null)
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router_dom__["c" /* Route */], { exact: true, path: '/h', component: __WEBPACK_IMPORTED_MODULE_3__Header__["a" /* default */] })
         )
       );
     }
   }]);
 
-  return App;
+  return IWANTTHISONE;
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(App, null), document.getElementById('app'));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(IWANTTHISONE, null), document.getElementById('testingyo')); /* <-- This is your <div id="testingyo"></div> inside of your view*/
 
 /***/ }),
 /* 67 */
@@ -63661,7 +63660,7 @@ StaticRouter.childContextTypes = {
 // Written in this round about way for babel-transform-imports
 
 
-/* unused harmony default export */ var _unused_webpack_default_export = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__["a" /* default */]);
+/* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__["a" /* default */]);
 
 /***/ }),
 /* 99 */
@@ -63924,7 +63923,8 @@ var Header = function Header() {
         __WEBPACK_IMPORTED_MODULE_1_react_router_dom__["b" /* Link */],
         { className: 'navbar-brand', to: '/' },
         'Tasksman'
-      )
+      ),
+      'header'
     )
   );
 };
