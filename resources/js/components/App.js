@@ -8,6 +8,7 @@ import React, { Component } from 'react'
         return (
           <BrowserRouter>
             <div>
+            omg why....
               <Header />
             </div>
           </BrowserRouter>
